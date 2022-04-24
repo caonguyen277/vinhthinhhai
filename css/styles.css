@@ -197,7 +197,7 @@ h2 {
     text-align: center;
     padding: 10px 0 0 0;
 }
-.Footer p{
+.Footer p, span{
     font-size: 70%;
 }
 .phantom{

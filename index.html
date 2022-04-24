@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6225a2fe4d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>VinhThinhHai</title>
+</head>
+
+<body>
+  <section class="container-navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="img/logo.jpg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Giới thiệu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tổng quang công ty</a></li>
+                  <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                  <li><a class="dropdown-item" href="#">Khách hàng đối tác</a></li>
+                  <li><a class="dropdown-item" href="#">Chính sách nhân sự</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tin tức
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tin công ty</a></li>
+                  <li><a class="dropdown-item" href="#">Tin công trình</a></li>
+                  <li><a class="dropdown-item" href="#">Tin đoàn thể</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dự án
+                </a>
+                <ul style="width: 700px; " class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h6>Theo dự án</h6>
+                        <ul>
+                          <li><a class="dropdown-item" href="#">Thiết kế thi công</a></li>
+                          <li><a class="dropdown-item" href="#">Dán dựng</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h6>Thời gian</h6>
+                        <ul>
+                          <li><a class="dropdown-item" href="#">2022</a></li>
+                          <li><a class="dropdown-item" href="#">2021</a></li>
+                          <li><a class="dropdown-item" href="#">2020</a></li>
+                          <li><a class="dropdown-item" href="#">2019</a></li>
+                          <li><a class="dropdown-item" href="#">2018</a></li>
+                          <li><a class="dropdown-item" href="#">2017</a></li>
+                          <li><a class="dropdown-item" href="#">2016</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h6>Vị trí</h6>
+                        <ul>
+                          <li><a class="dropdown-item" href="#">Miền bắc</a></li>
+                          <li><a class="dropdown-item" href="#">Miền trung</a></li>
+                          <li><a class="dropdown-item" href="#">Miền nam</a></li>
+                          <li><a class="dropdown-item" href="#">Miền nước ngoài</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h6>Tiến độ</h6>
+                        <ul>
+                          <li><a class="dropdown-item" href="#">Đã thi công</a></li>
+                          <li><a class="dropdown-item" href="#">Đang thi công</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Thư viện
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Hình ảnh</a></li>
+                  <li><a class="dropdown-item" href="#">Video</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Tuyển dụng</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </section>
+  <section class="section-collapse">
+    <div class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/van-phong-tan-minh-nhan-phoi-canh-tren-cao.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Hoi-nghi-can-bo-nhan-vien-tan-minh-nhan-nam-2021-v2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="section-middle">
+    <div class="container">
+      <h3 class="tittle-h3">Công Ty Cổ Phần Xây Dựng Kiến Trúc</h3>
+      <div style="display: flex; justify-content: center;" class="after"><div style="width: 400px;height: 2px;background-color: #e3e3e3;"><p style="width: 70%;height: 2px;background-color: #e4332d;"></p></div></div>
+      <div class="mt-4 row" style="display: flex;justify-content: center;align-items: center;">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div>
+            <img class="img-fluid" src="/img/logo.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div>
+            <h3 class="tittle-h3">Vinh Thịnh Hải</h3>
+            <div class="news">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, fugit! Totam dolor ab possimus
+                nobis natus, non nulla fugit ratione deserunt minima culpa illum eum, esse, itaque numquam quibusdam
+                saepe.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div>
+            <h3 class="tittle-h3">
+              Hồ sơ năng lực
+            </h3>
+            <div class="news set-hover">
+              <a target="blank_" href="youtube.com">
+                <img style="border-radius: 10px;" class="img-fluid set-img"
+                  src="https://www.tanminhnhan.vn/images/tuyen-dung/tan-minh-nhan-tuyen-dung-2022-04.jpg" alt="">
+                <p class="set-p">Thông tin</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="section-field ">
+    <div class="container">
+      <h3 style="text-align: left;" class="tittle-h3">
+        Lĩnh vực hoạt động
+      </h3>
+      <div style="display: flex; justify-content: left" class="after"><div style="width: 400px;height: 2px;background-color: #612e1f;"><p style="width: 70%;height: 2px;background-color: #f5deb3;"></p></div></div>
+      <div class="row" style="padding: 70px 0;">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p style="padding: 0 50px; text-align: center;">THIẾT KẾ VÀ THI CÔNG
+            CÁC CÔNG TRÌNH DÂN DỤNG VÀ CÔNG NGHIỆP</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p style="padding: 0 50px; text-align: center;">THIẾT KẾ VÀ THI CÔNG
+            TRANG TRÍ NỘI NGOẠI THẤT</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p style="padding: 0 50px; text-align: center;">THI CÔNG
+            CÁC HẠNG MỤC CƠ KHÍ</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p style="padding: 0 50px; text-align: center;">CUNG CẤP CÁC VẬT LIỆU
+            TRANG TRÍ NỘI NGOẠI THẤT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <h3 class="tittle-h3-new">Tin tức</h3>
+          <div style="display: flex; justify-content: left;" class="after"><div style="width: 400px;height: 2px;background-color: #e3e3e3;"><p style="width: 70%;height: 2px;background-color: #e4332d;"></p></div></div>
+          <div class="news">
+            <img class="img-fluid"
+              src="https://www.tanminhnhan.vn/cache/e7eac55cdb/images/tin-tuc-trang-chu/tan-minh-nhan-sao-vang-dat-viet-2021-1-36bbd258b7_1170x700.jpg"
+              alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, provident officiis repellat, saepe,
+              ipsa eum quis dolorem illum numquam voluptatum dicta ut dignissimos quibusdam perspiciatis. Quo sed magni
+              distinctio totam.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12">
+          <h3 class="tittle-h3-new">Video</h3>
+          <div style="display: flex; justify-content: left;" class="after"><div style="width: 400px;height: 2px;background-color: #e3e3e3;"><p style="width: 70%;height: 2px;background-color: #e4332d;"></p></div></div>
+          <div class="news">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+          </div>
+          <h3 class="tittle-h3-new mt-4">Tuyển Dụng</h3>
+          <div style="display: flex; justify-content: left;" class="after"><div style="width: 400px;height: 2px;background-color: #e3e3e3;"><p style="width: 70%;height: 2px;background-color: #e4332d;"></p></div></div>
+          <div class="news set-hover">
+            <a target="blank_" href="youtube.com">
+              <img class="img-fluid set-img"
+                src="https://www.tanminhnhan.vn/images/tuyen-dung/tan-minh-nhan-tuyen-dung-2022-04.jpg" alt="">
+              <p class="set-p">Thông tin</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-journeys">
+    <div class="container">
+      <h3 class="tittle-h3">Hành trình của Vinh Thịnh Hải</h3>
+      <div style="display: flex; justify-content: center;" class="after"><div style="width: 400px;height: 2px;background-color: #612e1f;"><p style="width: 70%;height: 2px;background-color: #f5deb3;"></p></div></div>
+      <div class="div-journeys">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i style="font-size: 350%;" class="fa-solid fa-building"></i>
+            <h1>6</h1>
+            <h2>NĂM HOẠT ĐỘNG</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i style="font-size: 350%;" class="fa-solid fa-people-group"></i>
+            <h1>100</h1>
+            <h2>NHÂN SỰ</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i style="font-size: 350%; " class="fa-solid fa-diagram-project"></i>
+            <h1>31</h1>
+            <h2>DỰ ÁN
+              (NĂM 2021)</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <i style="font-size: 350%; " class="fa-solid fa-hand-holding-dollar"></i>
+            <h1>100 TỶ</h1>
+            <h2>DOANH THU
+              (NĂM 2021)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section>
+    <div class="container">
+      <h3 class="tittle-h3">Khách Hàng & Đối Tác</h3>
+      <div style="display: flex; justify-content: center;" class="after"><div style="width: 400px;height: 2px;background-color: #e3e3e3;"><p style="width: 70%;height: 2px;background-color: #e4332d;"></p></div></div>
+      <div class="mt-4 row">
+        <div class="carousel"
+   data-flickity='{ "lazyLoad": true }'>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg" alt="tulip" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/grapes.jpg" alt="grapes" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg" alt="raspberries" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/wolf.jpg" alt="wolf" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/shore.jpg" alt="sea" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/leaf-droplets.jpg" alt="leaf droplets" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/gulls.jpg" alt="gulls" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg" alt="touch screen" />
+  </div>
+  <div class="carousel-cell">
+    <img class="carousel-cell-image"
+      data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/van.jpg" alt="van" />
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </section>
+  <div class="phantom"></div>
+  <section class="Footer">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Website: www.vinhthinhhai.vn</h6>
+            </div>
+            <div class="col-md-4">
+              <h6>Giấy phép kinh doanh</h6>
+            </div>
+            <div class="col-md-4">
+              <h6>QUY ĐỊNH</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            
+            <h6><i style="font-size: 150%; margin-right: 20px;" class="fa-solid fa-phone "></i>0905418161</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"></div>
+        <p>
+          © 2018 | Vinh Thịnh Hải. All Rights Reserved.
+          <span class="px-5">
+            Địa chỉ : 94 Hoàng Bích Sơn, An Hải Bắc, Sơn Trà, Đà Nẵng
+          </span>
+          <span>Email : hotro@dangkykinhdoanh.gov.vn</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="fixed-contract">
+    <div><a target="blank_" href="#"><i class="fa-solid fa-phone "></i></a></div>
+    <div><a target="blank_" href="#"><i class="fa-solid fa-envelope"></i></a></div>
+    <div><a target="blank_" href="facebook.com"><i class="fa-brands fa-facebook"></i></a></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  </script>
+</body>
+
+</html>

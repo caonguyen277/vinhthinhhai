@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 ul {
@@ -51,9 +52,11 @@ h6 {
 .navbar-light .navbar-nav .nav-link.active {
     color: wheat;
 }
+
 .navbar-light .navbar-nav .nav-link:focus {
     color: wheat;
 }
+
 .tittle-h3 {
     padding: 20px 0;
     text-align: center;
@@ -75,6 +78,10 @@ h6 {
 .section-field p {
     word-spacing: 2px;
     font-weight: 400;
+}
+
+.section-new .news p {
+    margin: 40px 0;
 }
 
 .dropdown-menu {
@@ -153,41 +160,15 @@ h2 {
     color: wheat;
 }
 
-.carousel {
-    background: #FAFAFA;
-  }
-  
-  .carousel-cell {
-    width: 40%;
-    height: 400px;
-    margin-right: 10px;
-    background: #333;
-  }
-  
-  .carousel-cell-image {
-    display: block;
-    max-height: 100%;
-    margin: 0 auto;
-    max-width: 100%;
-    opacity: 0;
-    -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
-  }
-  
-  /* fade in lazy loaded image */
-  .carousel-cell-image.flickity-lazyloaded,
-  .carousel-cell-image.flickity-lazyerror {
-    opacity: 1;
-  }
-
 /* footer */
-.Footer h6{
+.Footer h6 {
     text-align: center;
     text-transform: uppercase;
     font-size: 80% !important;
     border-bottom: none;
 }
-.Footer{
+
+.Footer {
     left: 0;
     bottom: 0;
     margin-bottom: auto;
@@ -195,37 +176,89 @@ h2 {
     background-color: #6e4235;
     color: white;
     text-align: center;
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 0;
 }
-.Footer p, span{
+
+.Footer p,
+span {
     font-size: 70%;
 }
-.phantom{
+
+.phantom {
     display: block;
     padding: 20px;
     height: 60px;
     width: 100%;
 
 }
-.fixed-contract{
+
+.fixed-contract {
     position: fixed;
     right: 25px;
     bottom: 10px;
 }
-.fixed-contract div a{
+
+.fixed-contract div a {
     font-size: 150%;
     color: #1e1e01;
 }
-@media screen and (max-width: 992px) {
-    
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    .dropdown-menu{
+
+.header-contract{
+    position: relative;
+
+}
+.support-contract{
+    position: absolute;
+    right: 130%;
+    top: 15%;
+    opacity: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #1e1e01;
+    color: wheat;
+    transition: .3s all;
+}
+
+.header-contract:hover .support-contract{
+    opacity: 1;
+}
+.header-contract:active .support-contract{
+    opacity: 1;
+}
+@media screen and (max-width: 992px) {}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .dropdown-menu {
         position: absolute !important;
         top: 100% !important;
         left: 30% !important;
         width: 90vw !important;
     }
-  }
+    .section-middle .set-media-sm{
+        padding: 40px 0;
+        text-align: center;
+    }
+    .section-field .set-media-sm{
+        padding: 20px 20px !important;
+    }
+    .section-journeys h3{
+        font-size: 139%;
+    }
+}
+
+/* flickity css */
+.main-carousell {
+    background: #6e4235;
+}
+
+.main-carousel img {
+    display: block;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .main-carousel img {
+        height: 400px;
+    }
+}

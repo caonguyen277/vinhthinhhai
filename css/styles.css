@@ -194,17 +194,19 @@ span {
 
 .fixed-contract {
     position: fixed;
-    right: 25px;
+    right: 10px;
     bottom: 10px;
 }
 
-.fixed-contract div a {
+.fixed-contract a {
+    margin: 0;
     font-size: 150%;
     color: #1e1e01;
 }
-
-.header-contract{
-    position: relative;
+.fixed-contract p{
+    margin: 0;
+    font-size: 150%;
+    color: #1e1e01;
 
 }
 .support-contract{
@@ -261,4 +263,14 @@ span {
     .main-carousel img {
         height: 400px;
     }
+}
+/* tongquancongty */
+.nav-tabs {
+    margin-bottom: 50px;
+}
+.nav-tabs button{
+    color: #612e1f;
+}
+.nav-tabs button:hover{
+    color: #612e1f;
 }

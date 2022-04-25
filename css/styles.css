@@ -209,10 +209,13 @@ span {
     color: #1e1e01;
 
 }
+.header-contract{
+    position: relative;
+}
 .support-contract{
     position: absolute;
     right: 130%;
-    top: 15%;
+    top: 0%;
     opacity: 0;
     padding: 5px 10px;
     border-radius: 5px;
